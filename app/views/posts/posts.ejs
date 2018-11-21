@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8"/>
+			<title>Noticias</title>
+		</head>
+	<body>
+
+		<h1>Noticias</h1>
+
+			<table>
+				<tr>
+					<th>ID</th>
+					<th>Titulo</th>
+					<th>Texto do Post</th>
+				</tr>
+
+				<% for(var i = 0; i < posts.length; i++) { %>
+				<tr>
+					<td><%= posts[i].id_post %></td>
+					<td><%= posts[i].nome_post %></td>
+					<td><%= posts[i].texto_post %></td>
+				</tr>
+				<% } %>
+			</table>
+	</body>
+</html>
